@@ -1,0 +1,716 @@
+<html>
+    <head>
+        <title>SHIFR</title>
+    </head>
+    <body>
+        Текст:<input id="text"><button onclick="work()">Зашифровать</button>
+        Шифр:<input id="shifr"><button onclick="work2()">Расшифровать</button>
+        <br>
+        <br>
+        <table>
+            <tr>
+             <th></th>
+             <th>A</th>
+             <th>D</th>
+             <th>F</th>
+             <th>G</th>
+             <th>V</th>
+             <th>X</th>
+            </tr>
+            <tr>
+                <th>A</th>
+                <th>X</th>
+                <th>Y</th>
+                <th>W</th>
+                <th>V</th>
+                <th>U</th>
+                <th>0</th>
+               </tr>
+               <tr>
+                <th>D</th>
+                <th>J</th>
+                <th>C</th>
+                <th>B</th>
+                <th>E</th>
+                <th>T</th>
+                <th>1</th>
+               </tr>
+               <tr>
+                <th>F</th>
+                <th>K</th>
+                <th>D</th>
+                <th>A</th>
+                <th>F</th>
+                <th>S</th>
+                <th>2</th>
+               </tr>
+               <tr>
+                <th>G</th>
+                <th>L</th>
+                <th>G</th>
+                <th>H</th>
+                <th>I</th>
+                <th>R</th>
+                <th>3</th>
+               </tr>
+               <tr>
+                <th>V</th>
+                <th>M</th>
+                <th>N</th>
+                <th>O</th>
+                <th>P</th>
+                <th>Q</th>
+                <th>4</th>
+               </tr>
+               <tr>
+                <th>X</th>
+                <th>Z</th>
+                <th>9</th>
+                <th>8</th>
+                <th>7</th>
+                <th>6</th>
+                <th>5</th>
+               </tr>
+          </table>
+        <script>
+            function work() {
+                var shifr = "";
+                var text = document.getElementById("text");
+                for(let i = 0; i < text.value.length; i++) {
+                    switch(text.value[i]){
+                        case "a":
+                            shifr+= "FF";
+                            break;
+                        case "b":
+                            shifr+= "DF";
+                            break;
+                        case "c":
+                            shifr+= "DD";
+                            break;
+                        case "d":
+                            shifr+= "FD";
+                            break;
+                        case "e":
+                            shifr+= "DG";
+                            break;
+                        case "f":
+                            shifr+= "FG";
+                            break;
+                        case "g":
+                            shifr+= "GD";
+                            break;
+                        case "h":
+                            shifr+= "GF";
+                            break;
+                        case "i":
+                            shifr+= "GG";
+                            break;
+                        case "j":
+                            shifr+= "DA";
+                            break;
+                        case "k":
+                            shifr+= "FA";
+                            break;
+                        case "l":
+                            shifr+= "GA";
+                            break;
+                        case "m":
+                            shifr+= "VA";
+                            break;
+                        case "n":
+                            shifr+= "VD";
+                            break;
+                        case "o":
+                            shifr+= "VF";
+                            break;
+                        case "p":
+                            shifr+= "VG";
+                            break;
+                        case "q":
+                            shifr+= "VV";
+                            break;
+                        case "r":
+                            shifr+= "GV";
+                            break;
+                        case "s":
+                            shifr+= "FV";
+                            break;
+                        case "t":
+                            shifr+= "DV";
+                            break;
+                        case "u":
+                            shifr+= "AV";
+                            break;
+                        case "v":
+                            shifr+= "AG";
+                            break;
+                        case "w":
+                            shifr+= "AF";
+                            break;
+                        case "x":
+                            shifr+= "AA";
+                            break;
+                        case "y":
+                            shifr+= "AD";
+                            break;
+                        case "z":
+                            shifr+= "XA";
+                            break;
+                        case "A":
+                            shifr+= "FF";
+                            break;
+                        case "B":
+                            shifr+= "DF";
+                            break;
+                        case "C":
+                            shifr+= "DD";
+                            break;
+                        case "D":
+                            shifr+= "FD";
+                            break;
+                        case "E":
+                            shifr+= "DG";
+                            break;
+                        case "F":
+                            shifr+= "FG";
+                            break;
+                        case "G":
+                            shifr+= "GD";
+                            break;
+                        case "H":
+                            shifr+= "GF";
+                            break;
+                        case "I":
+                            shifr+= "GG";
+                            break;
+                        case "J":
+                            shifr+= "DA";
+                            break;
+                        case "K":
+                            shifr+= "FA";
+                            break;
+                        case "L":
+                            shifr+= "GA";
+                            break;
+                        case "M":
+                            shifr+= "VA";
+                            break;
+                        case "N":
+                            shifr+= "VD";
+                            break;
+                        case "O":
+                            shifr+= "VF";
+                            break;
+                        case "P":
+                            shifr+= "VG";
+                            break;
+                        case "Q":
+                            shifr+= "VV";
+                            break;
+                        case "R":
+                            shifr+= "GV";
+                            break;
+                        case "S":
+                            shifr+= "FV";
+                            break;
+                        case "T":
+                            shifr+= "DV";
+                            break;
+                        case "U":
+                            shifr+= "AV";
+                            break;
+                        case "V":
+                            shifr+= "AG";
+                            break;
+                        case "W":
+                            shifr+= "AF";
+                            break;
+                        case "X":
+                            shifr+= "AA";
+                            break;
+                        case "Y":
+                            shifr+= "AD";
+                            break;
+                        case "Z":
+                            shifr+= "XA";
+                            break;
+                        case "0":
+                            shifr+= "AX";
+                            break;
+                        case "1":
+                            shifr+= "DX";
+                            break;
+                        case "2":
+                            shifr+= "FX";
+                            break;
+                        case "3":
+                            shifr+= "GX";
+                            break;
+                        case "4":
+                            shifr+= "VX";
+                            break;
+                        case "5":
+                            shifr+= "XX";
+                            break;
+                        case "6":
+                            shifr+= "XV";
+                            break;
+                        case "7":
+                            shifr+= "XG";
+                            break;
+                        case "8":
+                            shifr+= "XF";
+                            break;
+                        case "9":
+                            shifr+= "XD";
+                            break;
+                        case " ":
+                            break;
+                    }
+                }
+                document.getElementById("shifr").value = shifr;
+            }
+            function work2() {
+                var text = "";
+                var shifr = document.getElementById("shifr");
+                for(let i=0;i < shifr.value.length;i+=2) {
+                    switch(shifr.value[i]+shifr.value[i+1]) {
+                        case "FF":
+                            text+= "A";
+                            break;
+                        case "fF":
+                            text+= "A";
+                            break;
+                        case "Ff":
+                            text+= "A";
+                            break;
+                        case "ff":
+                            text+= "A";
+                            break;
+                        case "DF":
+                            text+= "B";
+                            break;
+                        case "dF":
+                            text+= "B";
+                            break;
+                        case "Df":
+                            text+= "B";
+                            break;
+                        case "df":
+                            text+= "B";
+                            break;
+                        case "DD":
+                            text+= "C";
+                            break;
+                        case "dD":
+                            text+= "C";
+                            break;
+                        case "Dd":
+                            text+= "C";
+                            break;
+                        case "dd":
+                            text+= "C";
+                            break;
+                        case "FD":
+                            text+= "D";
+                            break;
+                        case "fD":
+                            text+= "D";
+                            break;
+                        case "Fd":
+                            text+= "D";
+                            break;
+                        case "fd":
+                            text+= "D";
+                            break;
+                        case "DG":
+                            text+= "E";
+                            break;
+                        case "dG":
+                            text+= "E";
+                            break;
+                        case "Dg":
+                            text+= "E";
+                            break;
+                        case "dg":
+                            text+= "E";
+                            break;
+                        case "FG":
+                            text+= "F";
+                            break;
+                        case "fG":
+                            text+= "F";
+                            break;
+                        case "fG":
+                            text+= "F";
+                            break;
+                        case "fg":
+                            text+= "F";
+                            break;
+                        case "GD":
+                            text+= "G";
+                            break;
+                        case "gD":
+                            text+= "G";
+                            break;
+                        case "Gd":
+                            text+= "G";
+                            break;
+                        case "gd":
+                            text+= "G";
+                            break;
+                        case "GF":
+                            text+= "H";
+                            break;
+                        case "gF":
+                            text+= "H";
+                            break;
+                        case "Gf":
+                            text+= "H";
+                            break;
+                        case "gf":
+                            text+= "H";
+                            break;
+                        case "GG":
+                            text+= "I";
+                            break;
+                        case "gG":
+                            text+= "I";
+                            break;
+                        case "Gg":
+                            text+= "I";
+                            break;
+                        case "gg":
+                            text+= "I";
+                            break;
+                        case "DA":
+                            text+= "J";
+                            break;
+                        case "dA":
+                            text+= "J";
+                            break;
+                        case "Da":
+                            text+= "J";
+                            break;
+                        case "da":
+                            text+= "J";
+                            break;
+                        case "FA":
+                            text+= "K";
+                            break;
+                        case "fA":
+                            text+= "K";
+                            break;
+                        case "Fa":
+                            text+= "K";
+                            break;
+                        case "fa":
+                            text+= "K";
+                            break;
+                        case "GA":
+                            text+= "L";
+                            break;
+                        case "gA":
+                            text+= "L";
+                            break;
+                        case "Ga":
+                            text+= "L";
+                            break;
+                        case "ga":
+                            text+= "L";
+                            break;
+                        case "VA":
+                            text+= "M";
+                            break;
+                        case "vA":
+                            text+= "M";
+                            break;
+                        case "Va":
+                            text+= "M";
+                            break;
+                        case "va":
+                            text+= "M";
+                            break;
+                        case "VD":
+                            text+= "N";
+                            break;
+                        case "vD":
+                            text+= "N";
+                            break;
+                        case "Vd":
+                            text+= "N";
+                            break;
+                        case "vd":
+                            text+= "N";
+                            break;
+                        case "VF":
+                            text+= "O";
+                            break;
+                        case "vF":
+                            text+= "O";
+                            break;
+                        case "Vf":
+                            text+= "O";
+                            break;
+                        case "vf":
+                            text+= "O";
+                            break;
+                        case "VG":
+                            text+= "P";
+                            break;
+                        case "vG":
+                            text+= "P";
+                            break;
+                        case "Vg":
+                            text+= "P";
+                            break;
+                        case "vg":
+                            text+= "P";
+                            break;
+                        case "VV":
+                            text+= "Q";
+                            break;
+                        case "vV":
+                            text+= "Q";
+                            break;
+                        case "Vv":
+                            text+= "Q";
+                            break;
+                        case "vv":
+                            text+= "Q";
+                            break;
+                        case "GV":
+                            text+= "R";
+                            break;
+                        case "gV":
+                            text+= "R";
+                            break;
+                        case "Gv":
+                            text+= "R";
+                            break;
+                        case "gv":
+                            text+= "R";
+                            break;
+                        case "FV":
+                            text+= "S";
+                            break;
+                        case "fV":
+                            text+= "S";
+                            break;
+                        case "Fv":
+                            text+= "S";
+                            break;
+                        case "fv":
+                            text+= "S";
+                            break;
+                        case "DV":
+                            text+= "T";
+                            break;
+                        case "dV":
+                            text+= "T";
+                            break;
+                        case "Dv":
+                            text+= "T";
+                            break;
+                        case "dv":
+                            text+= "T";
+                            break;
+                        case "AV":
+                            text+= "U";
+                            break;
+                        case "aV":
+                            text+= "U";
+                            break;
+                        case "Av":
+                            text+= "U";
+                            break;
+                        case "av":
+                            text+= "U";
+                            break;
+                        case "AG":
+                            text+= "V";
+                            break;
+                        case "aG":
+                            text+= "V";
+                            break;
+                        case "Ag":
+                            text+= "V";
+                            break;
+                        case "ag":
+                            text+= "V";
+                            break;
+                        case "AF":
+                            text+= "W";
+                            break;
+                        case "aF":
+                            text+= "W";
+                            break;
+                        case "Fa":
+                            text+= "W";
+                            break;
+                        case "af":
+                            text+= "W";
+                            break;
+                        case "AA":
+                            text+= "X";
+                            break;
+                        case "aA":
+                            text+= "X";
+                            break;
+                        case "Aa":
+                            text+= "X";
+                            break;
+                        case "aa":
+                            text+= "X";
+                            break;
+                        case "AD":
+                            text+= "Y";
+                            break;
+                        case "aD":
+                            text+= "Y";
+                            break;
+                        case "Ad":
+                            text+= "Y";
+                            break;
+                        case "ad":
+                            text+= "Y";
+                            break;
+                        case "XA":
+                            text+= "Z";
+                            break;
+                        case "xA":
+                            text+= "Z";
+                            break;
+                        case "Xa":
+                            text+= "Z";
+                            break;
+                        case "xa":
+                            text+= "Z";
+                            break;
+                        case "AX":
+                            text+= "0";
+                            break;
+                        case "aX":
+                            text+= "0";
+                            break;
+                        case "Ax":
+                            text+= "0";
+                            break;
+                        case "ax":
+                            text+= "0";
+                            break;
+                        case "DX":
+                            text+= "1";
+                            break;
+                        case "dX":
+                            text+= "1";
+                            break;
+                        case "Dx":
+                            text+= "1";
+                            break;
+                        case "dx":
+                            text+= "1";
+                            break;
+                        case "FX":
+                            text+= "2";
+                            break;
+                        case "fX":
+                            text+= "2";
+                            break;
+                        case "Fx":
+                            text+= "2";
+                            break;
+                        case "fx":
+                            text+= "2";
+                            break;
+                        case "GX":
+                            text+= "3";
+                            break;
+                        case "gX":
+                            text+= "3";
+                            break;
+                        case "Gx":
+                            text+= "3";
+                            break;
+                        case "gx":
+                            text+= "3";
+                            break;
+                        case "VX":
+                            text+= "4";
+                            break;
+                        case "vX":
+                            text+= "4";
+                            break;
+                        case "Vx":
+                            text+= "4";
+                            break;
+                        case "vx":
+                            text+= "4";
+                            break;
+                        case "XX":
+                            text+= "5";
+                            break;
+                        case "xX":
+                            text+= "5";
+                            break;
+                        case "Xx":
+                            text+= "5";
+                            break;
+                        case "xx":
+                            text+= "5";
+                            break;
+                        case "XV":
+                            text+= "6";
+                            break;
+                        case "xV":
+                            text+= "6";
+                            break;
+                        case "Xv":
+                            text+= "6";
+                            break;
+                        case "xv":
+                            text+= "6";
+                            break;
+                        case "XG":
+                            text+= "7";
+                            break;
+                        case "xG":
+                            text+= "7";
+                            break;
+                        case "Xg":
+                            text+= "7";
+                            break;
+                        case "xg":
+                            text+= "7";
+                            break;
+                        case "XF":
+                            text+= "8";
+                            break;
+                        case "xF":
+                            text+= "8";
+                            break;
+                        case "Xf":
+                            text+= "8";
+                            break;
+                        case "xf":
+                            text+= "8";
+                            break;
+                        case "XD":
+                            text+= "9";
+                            break;
+                        case "xD":
+                            text+= "9";
+                            break;
+                        case "Xd":
+                            text+= "9";
+                            break;
+                        case "xd":
+                            text+= "9";
+                            break;
+                    }
+                }
+                document.getElementById("text").value = text;
+            }
+        </script>
+    </body>
+    </html>
